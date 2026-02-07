@@ -9,17 +9,18 @@ class Paciente extends Model
     /** @use HasFactory<\Database\Factories\PacienteFactory> */
     use \Illuminate\Database\Eloquent\Factories\HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
+
     protected $fillable = [
-        'nombre',
-        'apellido',
-        'fecha_nacimiento',
-        'direccion',
-        'telefono',
+        'nome',
+        'apelido',
+        'genero',
+        'ficha_nascimento',
+        'nacionalidade',
+        'naturalidade',
+        'estado_civil',
+        'profissao',
+        'endereco',
+        'telefone',
         'email',
-    ];
+        ];
 }

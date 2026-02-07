@@ -9,17 +9,13 @@ class Medico extends Model
     /** @use HasFactory<\Database\Factories\MedicoFactory> */
     use \Illuminate\Database\Eloquent\Factories\HasFactory;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
+
     protected $fillable = [
         'nombre',
-        'apellido',
-        'especialidad',
-        'telefono',
+        'apelido',
+        'especialidade',
+        'telefone',
         'email',
-        'disponibilidad',
+        'disponibilidade',
     ];
 }
